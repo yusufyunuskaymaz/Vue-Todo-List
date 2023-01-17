@@ -1,24 +1,22 @@
-# ilk
+### Thanks https://www.youtube.com/watch?v=ltOBJwviQr0 
 
-## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+![Animation](gif.gif)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+🎯 [click here to see page](https://vuejstodolistt.netlify.app/)
+### In this project, I learned;
 
-### Lints and fixes files
-```
-yarn lint
-```
+✨ Vuejs
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+✨ Props
+
+✨ Components
+
+✨ For in
+
+
+
+
+
+
+
