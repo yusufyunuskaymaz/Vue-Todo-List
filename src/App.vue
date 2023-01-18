@@ -1,7 +1,9 @@
 <template>
   <div class="container">
-    <HeaderDeneme title="Todo List" />
-    <TaskForm @addTodo="addTodo($event)" />
+    <HeaderDeneme :showForm="showTodo" @toggleForm="toggleForm($event)" title="Todo List" />
+    <div v-if="showTodo">
+      <TaskForm @addTodo="addTodo($event)" />
+    </div>
     <TasksA @deleteTask="deleteTask($event)" :tasks="tasks" />
   </div>
 </template>
@@ -45,6 +47,7 @@ export default {
   data() {
     return {
       tasks: [],
+      showTodo:false
     };
   },
   methods:{
@@ -55,6 +58,9 @@ export default {
     addTodo(todo){
       console.log(todo);
       this.tasks = [...this.tasks, todo]
+    },
+    toggleForm(){
+      this.showTodo = !this.showTodo
     }
   }
 };

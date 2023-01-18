@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{title}}</h1>
-        <ButtonA text="Add Task2"></ButtonA>
+        <ButtonA @toggleForm="toggleForm($event)" :text="showForm ? 'Close' : 'Add Task' "></ButtonA>
     </header>
 </template>
 
@@ -10,9 +10,15 @@ import ButtonA from './ButtonA.vue';
 export default {
     name: "HeaderDeneme",
     props: {
-        title: String
+        title: String,
+        showForm:Boolean
     },
-    components: { ButtonA }
+    components: { ButtonA },
+    methods:{
+        toggleForm(){
+            this.$emit("toggleForm")
+        }
+    }
 }
 </script>
 
