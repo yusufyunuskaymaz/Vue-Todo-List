@@ -3,7 +3,6 @@
     <div class="form-control">
       <label>Task</label>
       <input type="text" v-model="text" name="text" placeholder="Add Task" />
-      {{ text }}
     </div>
     <div class="form-control form-control-check"></div>
 
